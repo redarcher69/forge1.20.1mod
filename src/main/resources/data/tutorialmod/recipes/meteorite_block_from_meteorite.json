@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:meteorite"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:meteorite_block"
+  }
+}

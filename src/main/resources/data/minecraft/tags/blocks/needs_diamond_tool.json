@@ -1,0 +1,9 @@
+{
+  "values": [
+    "tutorialmod:meteorite_block",
+    "tutorialmod:raw_meteorite_block",
+    "tutorialmod:meteorite_ore",
+    "tutorialmod:deepslate_meteorite_ore",
+    "tutorialmod:end_meteorite_ore"
+  ]
+}

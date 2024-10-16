@@ -5,5 +5,10 @@
   "block.tutorialmod.meteorite_block": "Block of Meteorite",
   "block.tutorialmod.raw_meteorite_block": "Block of Raw Meteorite",
 
+  "block.tutorialmod.meteorite_ore": "Meteorite Ore",
+  "block.tutorialmod.deepslate_meteorite_ore": "Deeplasate Meteorite Ore",
+  "block.tutorialmod.end_meteorite_ore": "End Meteorite Ore",
+  "block.tutorialmod.meteorite_detector": "Meteorite Detector",
+
   "creativetab.tutorial_tab": "Meteorite Tab"
 }

@@ -24,6 +24,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.Raw_Meteorite.get());
                         output.accept(ModBlock.Meteorite_Block.get());
                         output.accept(ModBlock.Raw_Meteorite_Block.get());
+                        output.accept(ModBlock.Meteorite_Ore.get());
+                        output.accept(ModBlock.DeepSlate_Meteorite_Ore.get());
+                        output.accept(ModBlock.End_Meteorite_Ore.get());
+                        output.accept(ModItems.Meteor_Detector.get());
                     })
                     .build());
 
