@@ -1,0 +1,9 @@
+{
+  "item.tutorialmod.meteorite": "Meteorite",
+  "item.tutorialmod.raw_meteorite": "Raw Meteorite",
+
+  "block.tutorialmod.meteorite_block": "Block of Meteorite",
+  "block.tutorialmod.raw_meteorite_block": "Block of Raw Meteorite",
+
+  "creativetab.tutorial_tab": "Meteorite Tab"
+}
