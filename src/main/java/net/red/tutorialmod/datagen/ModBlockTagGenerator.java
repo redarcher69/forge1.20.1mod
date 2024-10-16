@@ -3,6 +3,7 @@ package net.red.tutorialmod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -24,8 +25,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.METEORITE_DETECTOR_VALUABLES)
                 .add(ModBlock.Meteorite_Ore.get(),
                 ModBlock.DeepSlate_Meteorite_Ore.get(),
-                ModBlock.End_Meteorite_Ore.get()
-                ).addTag(Tags.Blocks.ORES);
+                ModBlock.End_Meteorite_Ore.get(),
+                        Blocks.ANCIENT_DEBRIS
+                );
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlock.Meteorite_Ore.get(),

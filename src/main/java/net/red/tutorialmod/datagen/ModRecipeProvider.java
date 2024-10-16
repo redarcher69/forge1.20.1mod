@@ -2,6 +2,7 @@ package net.red.tutorialmod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -32,13 +33,35 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("$$$")
                 .pattern("$$$")
                 .pattern("$$$")
+                .define('$',ModItems.Meteorite.get())
+                .unlockedBy(getHasName(ModItems.Meteorite.get()),has(ModItems.Meteorite.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.Raw_Meteorite_Block.get())
+                .pattern("$$$")
+                .pattern("$$$")
+                .pattern("$$$")
                 .define('$',ModItems.Raw_Meteorite.get())
+                .unlockedBy(getHasName(ModItems.Raw_Meteorite.get()),has(ModItems.Raw_Meteorite.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Meteorite_Detector.get())
+                .pattern("$ $")
+                .pattern("$ $")
+                .pattern(" S ")
+                .define('$',ModItems.Meteorite.get())
+                .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.Meteorite.get()),has(ModItems.Meteorite.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.Meteorite.get(),9)
                 .requires(ModBlock.Meteorite_Block.get())
                 .unlockedBy(getHasName(ModBlock.Meteorite_Block.get()),has(ModBlock.Meteorite_Block.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.Raw_Meteorite.get(),9)
+                .requires(ModBlock.Raw_Meteorite_Block.get())
+                .unlockedBy(getHasName(ModBlock.Raw_Meteorite_Block.get()),has(ModBlock.Raw_Meteorite_Block.get()))
                 .save(pWriter);
     }
 

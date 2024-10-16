@@ -40,7 +40,7 @@ public class ModBlock {
                     .strength(5f).requiresCorrectToolForDrops(),UniformInt.of(3,6)));
 
     public static final RegistryObject<Block> Sound_Block = registerBlock("sound_block",
-            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noLootTable()));
 
     private static <T extends Block> RegistryObject<T> registerBlock( String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
