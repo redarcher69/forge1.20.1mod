@@ -1,5 +1,6 @@
 package net.red.tutorialmod.block;
 
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -13,6 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.red.tutorialmod.TutorialMod;
+import net.red.tutorialmod.block.custom.SoundBlock;
 import net.red.tutorialmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -25,17 +27,20 @@ public class ModBlock {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK)));
 
     public static final RegistryObject<Block> Raw_Meteorite_Block = registerBlock("raw_meteorite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).sound(SoundType.SUSPICIOUS_GRAVEL)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).sound(SoundType.CHAIN)));
 
     public static final RegistryObject<Block> Meteorite_Ore = registerBlock("meteorite_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.SPORE_BLOSSOM)
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(2f).requiresCorrectToolForDrops(),UniformInt.of(3,6)));
     public static final RegistryObject<Block> DeepSlate_Meteorite_Ore = registerBlock("deepslate_meteorite_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SPORE_BLOSSOM)
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(5f).requiresCorrectToolForDrops(),UniformInt.of(3,6)));
     public static final RegistryObject<Block> End_Meteorite_Ore = registerBlock("end_meteorite_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.SPORE_BLOSSOM)
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(5f).requiresCorrectToolForDrops(),UniformInt.of(3,6)));
+
+    public static final RegistryObject<Block> Sound_Block = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock( String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

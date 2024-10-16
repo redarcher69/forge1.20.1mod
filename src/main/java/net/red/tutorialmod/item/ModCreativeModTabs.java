@@ -27,7 +27,11 @@ public class ModCreativeModTabs {
                         output.accept(ModBlock.Meteorite_Ore.get());
                         output.accept(ModBlock.DeepSlate_Meteorite_Ore.get());
                         output.accept(ModBlock.End_Meteorite_Ore.get());
-                        output.accept(ModItems.Meteor_Detector.get());
+                        output.accept(ModItems.Meteorite_Detector.get());
+                        output.accept(ModBlock.Sound_Block.get());
+                        output.accept(ModItems.Starfruit.get());
+                        output.accept(ModItems.StarFrO_ouit.get());
+                        output.accept(ModItems.BlackStrawStarFruit.get());
                     })
                     .build());
 

@@ -8,7 +8,15 @@
   "block.tutorialmod.meteorite_ore": "Meteorite Ore",
   "block.tutorialmod.deepslate_meteorite_ore": "Deeplasate Meteorite Ore",
   "block.tutorialmod.end_meteorite_ore": "End Meteorite Ore",
-  "block.tutorialmod.meteorite_detector": "Meteorite Detector",
+
+  "item.tutorialmod.meteorite_detector": "Meteorite Detector",
+  "block.tutorialmod.sound_block": "Sound Block",
+
+  "item.tutorialmod.starfruit": "StairFruit",
+  "item.tutorialmod.starfr0_ouit": "StarFrO_ouit",
+  "item.tutorialmod.blackstrawstarfruit": "BlackStrawStarFruit",
+
+  "tooltip.tutorialmod.meteorite_detector.tooltip": "Detects Meteorite Ore bellow a block in a circle",
 
   "creativetab.tutorial_tab": "Meteorite Tab"
 }
