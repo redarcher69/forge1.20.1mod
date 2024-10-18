@@ -34,7 +34,21 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlock.DeepSlate_Meteorite_Ore.get(),
                 ModBlock.End_Meteorite_Ore.get(),
                 ModBlock.Meteorite_Block.get(),
-                ModBlock.Raw_Meteorite_Block.get()
+                ModBlock.Raw_Meteorite_Block.get(),
+                ModBlock.Meteorite_Bricks_Slab.get(),
+                ModBlock.Meteorite_Bricks_Stairs.get(),
+                ModBlock.Meteorite_Bricks_Door.get(),
+                ModBlock.Meteorite_Bricks_TrapDoor.get(),
+                ModBlock.Meteorite_Bricks_Button.get(),
+                ModBlock.Meteorite_Bricks_Pressure_Plate.get(),
+                ModBlock.Meteorite_Bricks_Wall_Gate.get(),
+                ModBlock.Meteorite_Bricks_Wall.get()
         );
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlock.Meteorite_Bricks_Wall.get());
+        this.tag(BlockTags.FENCE_GATES)
+               .add(ModBlock.Meteorite_Bricks_Wall_Gate.get());
+
     }
 }

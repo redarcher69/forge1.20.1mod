@@ -16,6 +16,16 @@
   "item.tutorialmod.starfr0_ouit": "StarFrO_ouit",
   "item.tutorialmod.blackstrawstarfruit": "BlackStrawStarFruit",
 
+  "block.tutorialmod.meteorite_bricks": "Meteorite Bricks",
+  "block.tutorialmod.meteorite_bricks_stairs": "Meteorite Bricks Stairs",
+  "block.tutorialmod.meteorite_bricks_slab": "Meteorite Bricks Slab",
+  "block.tutorialmod.meteorite_bricks_button": "Meteorite Bricks Button",
+  "block.tutorialmod.meteorite_bricks_pressure_plate": "Meteorite Bricks Pressure Plate",
+  "block.tutorialmod.meteorite_bricks_wall": "Meteorite Bricks Wall",
+  "block.tutorialmod.meteorite_bricks_wall_gate": "Meteorite Bricks Wall Gate",
+  "block.tutorialmod.meteorite_bricks_door": "Meteorite Bricks Door",
+  "block.tutorialmod.meteorite_bricks_trapdoor": "Meteorite Bricks Trapdoor",
+
   "tooltip.tutorialmod.meteorite_detector.tooltip": "Detects Meteorite Ore bellow a block in a circle",
 
   "creativetab.tutorial_tab": "Meteorite Tab"

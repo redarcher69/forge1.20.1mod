@@ -32,6 +32,15 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.Starfruit.get());
                         output.accept(ModItems.StarFrO_ouit.get());
                         output.accept(ModItems.BlackStrawStarFruit.get());
+                        output.accept(ModBlock.Meteorite_Bricks.get());
+                        output.accept(ModBlock.Meteorite_Bricks_Slab.get());
+                        output.accept(ModBlock.Meteorite_Bricks_Stairs.get());
+                        output.accept(ModBlock.Meteorite_Bricks_Wall.get());
+                        output.accept(ModBlock.Meteorite_Bricks_Wall_Gate.get());
+                        output.accept(ModBlock.Meteorite_Bricks_Button.get());
+                        output.accept(ModBlock.Meteorite_Bricks_Pressure_Plate.get());
+                        output.accept(ModBlock.Meteorite_Bricks_Door.get());
+                        output.accept(ModBlock.Meteorite_Bricks_TrapDoor.get());
                     })
                     .build());
 

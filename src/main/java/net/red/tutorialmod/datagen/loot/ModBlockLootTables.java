@@ -12,6 +12,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import net.red.tutorialmod.block.ModBlock;
 import net.red.tutorialmod.item.ModItems;
@@ -29,6 +30,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlock.Meteorite_Block.get());
         this.dropSelf(ModBlock.Raw_Meteorite_Block.get());
         //this.dropSelf(ModBlock.Sound_Block.get());
+        this.dropSelf(ModBlock.Meteorite_Bricks.get());
+        this.dropSelf(ModBlock.Meteorite_Bricks_Wall_Gate.get());
+        this.dropSelf(ModBlock.Meteorite_Bricks_Wall.get());
+        this.dropSelf(ModBlock.Meteorite_Bricks_Pressure_Plate.get());
+        this.dropSelf(ModBlock.Meteorite_Bricks_Stairs.get());
+        this.dropSelf(ModBlock.Meteorite_Bricks_Button.get());
+        this.dropSelf(ModBlock.Meteorite_Bricks_TrapDoor.get());
 
         this.add(ModBlock.Meteorite_Ore.get(),
                 block -> createMeteoriteOreDrops(ModBlock.Meteorite_Ore.get(), ModItems.Raw_Meteorite.get()));
@@ -37,6 +45,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlock.End_Meteorite_Ore.get(),
                 block -> createEndMeteoriteOreDrops(ModBlock.End_Meteorite_Ore.get(),ModItems.Raw_Meteorite.get()));
+
+        this.add(ModBlock.Meteorite_Bricks_Slab.get(),
+                block -> createSlabItemTable(ModBlock.Meteorite_Bricks_Slab.get()));
+
+        this.add(ModBlock.Meteorite_Bricks_Door.get(),
+                block -> createDoorTable(ModBlock.Meteorite_Bricks_Door.get()));
     }
 
     protected LootTable.Builder createMeteoriteOreDrops(Block pBlock,Item item) {
